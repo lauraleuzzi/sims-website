@@ -5,12 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulations</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .nav { background: #333; padding: 10px; }
-        .nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        /* Reset default styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Overlay for page content */
+        .overlay {
+            background: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 100px auto;
+            max-width: 800px;
+        }
+
+        /* Header text styling */
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation styling */
+        .nav {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation menu -->
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="simulations.html">Simulations</a>
@@ -18,8 +69,10 @@
         <a href="contacts.html">Contacts</a>
     </div>
 
-    <h1>Simulations</h1>
-    <p>Here you can describe your simulation setup, methodology, and any unique features of the generated galaxy images.</p>
+    <!-- Overlay container with page-specific text -->
+    <div class="overlay">
+        <h1>Simulations</h1>
+        <p>Here you can describe your simulation setup, methodology, and any unique features of the generated galaxy images.</p>
+    </div>
 </body>
 </html>
-
