@@ -5,12 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galaxy Image Database</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .nav { background: #333; padding: 10px; }
-        .nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        /* Reset some default styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Body background */
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('placeholder.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Overlay for better text visibility */
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Header text styles */
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation styling */
+        .nav {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation menu -->
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="simulations.html">Simulations</a>
@@ -18,7 +71,10 @@
         <a href="contacts.html">Contacts</a>
     </div>
 
-    <h1>Welcome to the database</h1>
-    <p>This website provides access to galaxy simulations for scientific research.</p>
+    <!-- Overlay container with text -->
+    <div class="overlay">
+        <h1>Welcome to this Website</h1>
+        <p>This website provides access to galaxy simulations for scientific research.</p>
+    </div>
 </body>
 </html>
