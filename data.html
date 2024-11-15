@@ -55,6 +55,46 @@
         .nav a:hover {
             text-decoration: underline;
         }
+
+        /* Table styling */
+        .data-table {
+            margin: 50px auto;
+            width: 90%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th, .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .data-table th {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-weight: bold;
+        }
+
+        .data-table tr:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .data-table a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            background: #007bff;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .data-table a:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -65,11 +105,25 @@
         <a href="contacts.html">Contacts</a>
     </div>
 
-  <div class="overlay">
-    <h1>The Data</h1>
-    <p>Download the galaxy simulation images and access the catalogs below:</p>
-    <p><a href="Yhttps://drive.google.com/drive/folders/1q61ueAL8OPORfUryiJQ0Gu_zt7zwq-PX?usp=drive_link">Download Images and Catalogs</a></p>
-  </div>
+    <div class="overlay">
+        <h1>The Data</h1>
+        <p>Download the galaxy simulation images and access the catalogs below:</p>
+    </div>
+
+    <!-- Data Table -->
+    <table class="data-table">
+        <tr>
+            <th>Description</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <td>Galaxy Simulation Images</td>
+            <td><a href="https://drive.google.com/drive/folders/1q61ueAL8OPORfUryiJQ0Gu_zt7zwq-PX?usp=drive_link" target="_blank">Download</a></td>
+        </tr>
+        <tr>
+            <td>Galaxy Simulation Catalogs</td>
+            <td><a href="https://drive.google.com/drive/folders/1q61ueAL8OPORfUryiJQ0Gu_zt7zwq-PX?usp=drive_link" target="_blank">Download</a></td>
+        </tr>
+    </table>
 </body>
 </html>
-
