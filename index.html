@@ -22,11 +22,20 @@
 
         /* Overlay for better text visibility */
         .overlay {
-            background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
-            padding: 40px;
-            border-radius: 8px;
-            text-align: center;
+        background: rgba(128, 128, 128, 0.4); /* more gray and more transparent */
+        position: fixed; /* covers the entire viewport */
+        top: 0; /* start at the top */
+        left: 0; /* start at the left */
+        width: 100%; /* full width */
+        height: 100%; /* full height */
+        padding: 0; /* remove extra padding */
+        text-align: center; /* center text horizontally */
+        display: flex; /* enables centering */
+        align-items: center; /* centers vertically */
+        justify-content: center; /* centers horizontally */
+        z-index: 1; /* ensures it stays above other content */
         }
+
 
         /* Header text styles */
         h1 {
