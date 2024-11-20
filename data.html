@@ -16,15 +16,21 @@
         /* Overlay for page content */
         .overlay {
             background: rgba(128, 128, 128, 0.4); /* More gray and more transparent */
-            position: relative; /* Relative to its position in the document flow */
-            margin: 50px auto; /* Center the container with space around it */
-            padding: 50px; /* Space inside the container */
+            position: fixed; /* Cover the entire viewport */
+            top: 0; /* Start at the top */
+            left: 0; /* Start at the left */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            padding: 50px; /* Add padding inside the overlay */
             text-align: center; /* Center text horizontally */
-            width: 90%; /* Optional: width control */
-            max-width: 800px; /* Optional: max width control */
-            border-radius: 8px; /* Rounded corners */
+            display: flex; /* Use flexbox to stack elements */
+            flex-direction: column; /* Stack child elements vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Start from the top */
+            overflow: auto; /* Allow scrolling if content overflows */
             z-index: 1; /* Lower than the nav bar */
         }
+
 
         /* Header text styling */
         h1 {
@@ -109,10 +115,9 @@
         <a href="contacts.html">Contacts</a>
     </div>
 
-    <div class="overlay">
-        <h1>Data</h1>
-        <p>In this page, you can find the available simulated sets and corresponding catalogs. This is the updated list of the simulations available:</p>
-    </div>
+   <div class="overlay">
+    <h1>Data</h1>
+    <p>In this page, you can find the available simulated sets and corresponding catalogs. This is the updated list of the simulations available:</p>
 
     <!-- Data Table -->
     <table class="data-table">
@@ -121,7 +126,7 @@
             <th>Download</th>
         </tr>
         <tr>
-            <td>Relea</td>
+            <td>Set 1: images and catalogs</td>
             <td><a href="https://drive.google.com/drive/folders/1q61ueAL8OPORfUryiJQ0Gu_zt7zwq-PX?usp=drive_link" target="_blank">Download</a></td>
         </tr>
         <tr>
@@ -129,5 +134,6 @@
             <td><a href="https://drive.google.com/drive/folders/1q61ueAL8OPORfUryiJQ0Gu_zt7zwq-PX?usp=drive_link" target="_blank">Download</a></td>
         </tr>
     </table>
+</div>
 </body>
 </html>
