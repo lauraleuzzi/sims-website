@@ -15,18 +15,14 @@
 
         /* Overlay for page content */
         .overlay {
-            background: rgba(128, 128, 128, 0.4); /* more gray and more transparent */
-            position: fixed; /* covers the entire viewport */
-            top: 0; /* start at the top */
-            left: 0; /* start at the left */
-            width: 100%; /* full width */
-            height: 100%; /* full height */
-            padding: 20px; /* remove extra padding */
-            text-align: center; /* center text horizontally */
-            display: flex; /* enables centering */
-            flex-direction: column; /* stack child elements vertically */
-            align-items: center; /* centers horizontally */
-            justify-content: flex-start; /* centers vertically */
+            background: rgba(128, 128, 128, 0.4); /* More gray and more transparent */
+            position: relative; /* Relative to its position in the document flow */
+            margin: 50px auto; /* Center the container with space around it */
+            padding: 50px; /* Space inside the container */
+            text-align: center; /* Center text horizontally */
+            width: 90%; /* Optional: width control */
+            max-width: 800px; /* Optional: max width control */
+            border-radius: 8px; /* Rounded corners */
             z-index: 1; /* Lower than the nav bar */
         }
 
