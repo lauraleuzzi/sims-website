@@ -18,12 +18,20 @@
 
         /* Overlay for page content */
         .overlay {
-            background: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
-            padding: 40px;
-            border-radius: 8px;
-            text-align: center;
-            margin: 100px auto;
-            max-width: 800px;
+            background: rgba(128, 128, 128, 0.4); /* More gray and more transparent */
+            position: fixed; /* Cover the entire viewport */
+            top: 0; /* Start at the top */
+            left: 0; /* Start at the left */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            padding: 70px; /* Add padding inside the overlay */
+            text-align: center; /* Center text horizontally */
+            display: flex; /* Use flexbox to stack elements */
+            flex-direction: column; /* Stack child elements vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Start from the top */
+            overflow: auto; /* Allow scrolling if content overflows */
+            z-index: 1; /* Lower than the nav bar */
         }
 
         /* Header text styling */
@@ -46,6 +54,7 @@
             background: rgba(0, 0, 0, 0.8);
             padding: 10px 20px;
             border-radius: 5px;
+            z-index: 2; /* Higher than the overlay */
         }
 
         .nav a {
